@@ -1,6 +1,8 @@
 import requests
 import json
 import jmespath
+from dotenv import load_dotenv
+import os
 
 def requete_data(bearer, client_id, client_secret) :
     url = 'https://sync.bankin.com/v2/transactions'
@@ -32,13 +34,15 @@ def update_data(data):
 
 
 # SECRETS
-bearer = 'Bearer '
-client_id = ''
-client_secret = ''
+load_dotenv()
+bearer = os.environ["bearer"]
+client_id = os.environ["client_id"]
+client_secret = os.environ["client_secret"]
 
 # GET DATAS
 #data = requete_data(bearer, client_id, client_secret)
 #update_data(data)
+
 
 noms = jmespath.search("[].nom", utilisateurs)
 print("Noms :", noms)
