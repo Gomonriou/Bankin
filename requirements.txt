@@ -1,3 +1,5 @@
 requests
 jmespath
 python-dotenv
+matplotlib
+seaborn
