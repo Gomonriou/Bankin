@@ -25,12 +25,24 @@ def requete_data(bearer, client_id, client_secret) :
 
 
     response = requests.get(url, headers=custom_headers, params=params)
+    data = response.json()
+
+    with open("data.json", "w") as json_file:
+        json.dump(data, json_file, indent=4)
+    
     return response.json()
 
 
-def update_data(data):
-    with open("data.json", "w") as json_file:
-        json.dump(data, json_file, indent=4)
+def get_datas(update_data=False):
+    if update_data :
+        requete_data(bearer, client_id, client_secret)
+        with open('data.json', 'r', encoding='utf-8') as fichier:
+            datas = json.load(fichier)
+            return datas
+    else :
+        with open('data.json', 'r', encoding='utf-8') as fichier:
+            datas = json.load(fichier)
+            return datas
 
 
 # SECRETS
@@ -39,10 +51,11 @@ bearer = os.environ["bearer"]
 client_id = os.environ["client_id"]
 client_secret = os.environ["client_secret"]
 
-# GET DATAS
-#data = requete_data(bearer, client_id, client_secret)
-#update_data(data)
+datas = get_datas(update_data=False)
+print(datas)
+
+# categories = jmespath.search("transactions[].category", datas)
+# print("Categories :", categories)
 
 
-noms = jmespath.search("[].nom", utilisateurs)
-print("Noms :", noms)
+
