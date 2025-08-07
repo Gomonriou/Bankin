@@ -1,0 +1,890 @@
+{
+    "resources": [
+        {
+            "id": 171,
+            "name": "Abonnements",
+            "categories": [
+                {
+                    "id": 180,
+                    "name": "Internet",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/180"
+                },
+                {
+                    "id": 219,
+                    "name": "Câble / Satellite",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/219"
+                },
+                {
+                    "id": 258,
+                    "name": "Téléphonie fixe",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/258"
+                },
+                {
+                    "id": 277,
+                    "name": "Téléphonie mobile",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/277"
+                },
+                {
+                    "id": 280,
+                    "name": "Abonnements - Autres",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/280"
+                }
+            ],
+            "resource_type": "category",
+            "resource_uri": "/v2/categories/171"
+        },
+        {
+            "id": 164,
+            "name": "Banque",
+            "categories": [
+                {
+                    "id": 79,
+                    "name": "Frais bancaires",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/79"
+                },
+                {
+                    "id": 89,
+                    "name": "Remboursement emprunt",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/89"
+                },
+                {
+                    "id": 191,
+                    "name": "Débit mensuel carte",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/191"
+                },
+                {
+                    "id": 192,
+                    "name": "Epargne",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/192"
+                },
+                {
+                    "id": 194,
+                    "name": "Hypothèque",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/194"
+                },
+                {
+                    "id": 195,
+                    "name": "Banque - Autres",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/195"
+                },
+                {
+                    "id": 306,
+                    "name": "Services Bancaires",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/306"
+                },
+                {
+                    "id": 756587,
+                    "name": "Incidents de paiement",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/756587"
+                }
+            ],
+            "resource_type": "category",
+            "resource_uri": "/v2/categories/164"
+        },
+        {
+            "id": 170,
+            "name": "Loisirs & Sorties",
+            "categories": [
+                {
+                    "id": 223,
+                    "name": "Loisirs & Sorties - Autres",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/223"
+                },
+                {
+                    "id": 224,
+                    "name": "Frais Animaux",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/224"
+                },
+                {
+                    "id": 226,
+                    "name": "Hobbies",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/226"
+                },
+                {
+                    "id": 227,
+                    "name": "Bars / Clubs",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/227"
+                },
+                {
+                    "id": 242,
+                    "name": "Sport",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/242"
+                },
+                {
+                    "id": 244,
+                    "name": "Sorties culturelles",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/244"
+                },
+                {
+                    "id": 249,
+                    "name": "Voyages / Vacances",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/249"
+                },
+                {
+                    "id": 263,
+                    "name": "Hôtels",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/263"
+                },
+                {
+                    "id": 269,
+                    "name": "Divertissements",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/269"
+                },
+                {
+                    "id": 310,
+                    "name": "Sports d'hiver",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/310"
+                },
+                {
+                    "id": 320,
+                    "name": "Sortie au restaurant",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/320"
+                }
+            ],
+            "resource_type": "category",
+            "resource_uri": "/v2/categories/170"
+        },
+        {
+            "id": 159,
+            "name": "Impôts & Taxes",
+            "categories": [
+                {
+                    "id": 206,
+                    "name": "Impôts & Taxes - Autres",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/206"
+                },
+                {
+                    "id": 207,
+                    "name": "Amendes",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/207"
+                },
+                {
+                    "id": 208,
+                    "name": "Impôts sur le revenu",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/208"
+                },
+                {
+                    "id": 209,
+                    "name": "Impôts fonciers",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/209"
+                },
+                {
+                    "id": 302,
+                    "name": "Taxes",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/302"
+                },
+                {
+                    "id": 441988,
+                    "name": "TVA",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/441988"
+                }
+            ],
+            "resource_type": "category",
+            "resource_uri": "/v2/categories/159"
+        },
+        {
+            "id": 162,
+            "name": "Achats & Shopping",
+            "categories": [
+                {
+                    "id": 183,
+                    "name": "Cadeaux",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/183"
+                },
+                {
+                    "id": 184,
+                    "name": "High Tech",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/184"
+                },
+                {
+                    "id": 186,
+                    "name": "Achats & Shopping - Autres",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/186"
+                },
+                {
+                    "id": 243,
+                    "name": "Livres",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/243"
+                },
+                {
+                    "id": 262,
+                    "name": "Articles de sport",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/262"
+                },
+                {
+                    "id": 272,
+                    "name": "Vêtements/Chaussures",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/272"
+                },
+                {
+                    "id": 318,
+                    "name": "Musique",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/318"
+                },
+                {
+                    "id": 319,
+                    "name": "Films & DVDs",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/319"
+                },
+                {
+                    "id": 441888,
+                    "name": "Licences",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/441888"
+                }
+            ],
+            "resource_type": "category",
+            "resource_uri": "/v2/categories/162"
+        },
+        {
+            "id": 163,
+            "name": "Santé",
+            "categories": [
+                {
+                    "id": 236,
+                    "name": "Pharmacie",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/236"
+                },
+                {
+                    "id": 245,
+                    "name": "Mutuelle",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/245"
+                },
+                {
+                    "id": 261,
+                    "name": "Médecin",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/261"
+                },
+                {
+                    "id": 268,
+                    "name": "Santé - Autres",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/268"
+                },
+                {
+                    "id": 322,
+                    "name": "Opticien / Ophtalmo.",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/322"
+                },
+                {
+                    "id": 325,
+                    "name": "Dentiste",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/325"
+                }
+            ],
+            "resource_type": "category",
+            "resource_uri": "/v2/categories/163"
+        },
+        {
+            "id": 166,
+            "name": "Dépenses pro",
+            "categories": [
+                {
+                    "id": 90,
+                    "name": "Dépenses pro - Autres",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/90"
+                },
+                {
+                    "id": 202,
+                    "name": "Publicité",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/202"
+                },
+                {
+                    "id": 203,
+                    "name": "Maintenance bureaux",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/203"
+                },
+                {
+                    "id": 204,
+                    "name": "Frais d'expéditions",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/204"
+                },
+                {
+                    "id": 205,
+                    "name": "Frais d'impressions",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/205"
+                },
+                {
+                    "id": 265,
+                    "name": "Notes de frais",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/265"
+                },
+                {
+                    "id": 270,
+                    "name": "Services en ligne",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/270"
+                },
+                {
+                    "id": 274,
+                    "name": "Fournitures de bureau",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/274"
+                },
+                {
+                    "id": 441886,
+                    "name": "Cotisations Sociales",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/441886"
+                },
+                {
+                    "id": 441889,
+                    "name": "Comptabilité",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/441889"
+                },
+                {
+                    "id": 441890,
+                    "name": "Salaires",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/441890"
+                },
+                {
+                    "id": 441891,
+                    "name": "Rémunérations dirigeants",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/441891"
+                },
+                {
+                    "id": 441892,
+                    "name": "Frais de recrutement",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/441892"
+                },
+                {
+                    "id": 441895,
+                    "name": "Conseils",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/441895"
+                },
+                {
+                    "id": 441896,
+                    "name": "Sous-traitance",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/441896"
+                },
+                {
+                    "id": 441897,
+                    "name": "Prévoyance",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/441897"
+                },
+                {
+                    "id": 441898,
+                    "name": "Taxe d'apprentissage",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/441898"
+                },
+                {
+                    "id": 441899,
+                    "name": "Frais juridique",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/441899"
+                },
+                {
+                    "id": 441900,
+                    "name": "Marketing",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/441900"
+                }
+            ],
+            "resource_type": "category",
+            "resource_uri": "/v2/categories/166"
+        },
+        {
+            "id": 160,
+            "name": "Divers",
+            "categories": [
+                {
+                    "id": 1,
+                    "name": "A catégoriser",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/1"
+                },
+                {
+                    "id": 276,
+                    "name": "Autres dépenses",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/276"
+                },
+                {
+                    "id": 278,
+                    "name": "Assurance",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/278"
+                },
+                {
+                    "id": 294,
+                    "name": "Dons",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/294"
+                },
+                {
+                    "id": 308,
+                    "name": "Tabac",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/308"
+                },
+                {
+                    "id": 324,
+                    "name": "Pressing",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/324"
+                }
+            ],
+            "resource_type": "category",
+            "resource_uri": "/v2/categories/160"
+        },
+        {
+            "id": 315,
+            "name": "Esthétique & Soins",
+            "categories": [
+                {
+                    "id": 235,
+                    "name": "Coiffeur",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/235"
+                },
+                {
+                    "id": 248,
+                    "name": "Cosmétique",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/248"
+                },
+                {
+                    "id": 316,
+                    "name": "Spa & Massage",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/316"
+                },
+                {
+                    "id": 317,
+                    "name": "Esthétique & Soins - Autres",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/317"
+                },
+                {
+                    "id": 321,
+                    "name": "Esthétique",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/321"
+                }
+            ],
+            "resource_type": "category",
+            "resource_uri": "/v2/categories/315"
+        },
+        {
+            "id": 167,
+            "name": "Scolarité & Enfants",
+            "categories": [
+                {
+                    "id": 237,
+                    "name": "Scolarité & Enfants - Autres",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/237"
+                },
+                {
+                    "id": 238,
+                    "name": "Fournitures scolaires",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/238"
+                },
+                {
+                    "id": 239,
+                    "name": "Ecole",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/239"
+                },
+                {
+                    "id": 240,
+                    "name": "Pensions",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/240"
+                },
+                {
+                    "id": 241,
+                    "name": "Logement étudiant",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/241"
+                },
+                {
+                    "id": 259,
+                    "name": "Prêt étudiant",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/259"
+                },
+                {
+                    "id": 266,
+                    "name": "Jouets",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/266"
+                },
+                {
+                    "id": 267,
+                    "name": "Baby-sitters & Crèches",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/267"
+                }
+            ],
+            "resource_type": "category",
+            "resource_uri": "/v2/categories/167"
+        },
+        {
+            "id": 165,
+            "name": "Auto & Transports",
+            "categories": [
+                {
+                    "id": 84,
+                    "name": "Auto & Transports - Autres",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/84"
+                },
+                {
+                    "id": 87,
+                    "name": "Carburant",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/87"
+                },
+                {
+                    "id": 196,
+                    "name": "Transports en commun",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/196"
+                },
+                {
+                    "id": 197,
+                    "name": "Billets de train",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/197"
+                },
+                {
+                    "id": 198,
+                    "name": "Billets d'avion",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/198"
+                },
+                {
+                    "id": 247,
+                    "name": "Assurance véhicule",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/247"
+                },
+                {
+                    "id": 251,
+                    "name": "Stationnement",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/251"
+                },
+                {
+                    "id": 264,
+                    "name": "Location de véhicule",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/264"
+                },
+                {
+                    "id": 288,
+                    "name": "Entretien véhicule",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/288"
+                },
+                {
+                    "id": 309,
+                    "name": "Péage",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/309"
+                }
+            ],
+            "resource_type": "category",
+            "resource_uri": "/v2/categories/165"
+        },
+        {
+            "id": 2,
+            "name": "Entrées d'argent",
+            "categories": [
+                {
+                    "id": 3,
+                    "name": "Autres rentrées",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/3"
+                },
+                {
+                    "id": 80,
+                    "name": "Intérêts",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/80"
+                },
+                {
+                    "id": 230,
+                    "name": "Salaires",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/230"
+                },
+                {
+                    "id": 231,
+                    "name": "Ventes",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/231"
+                },
+                {
+                    "id": 232,
+                    "name": "Services",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/232"
+                },
+                {
+                    "id": 233,
+                    "name": "Extra",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/233"
+                },
+                {
+                    "id": 271,
+                    "name": "Dépôt d'argent",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/271"
+                },
+                {
+                    "id": 279,
+                    "name": "Retraite",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/279"
+                },
+                {
+                    "id": 282,
+                    "name": "Virements internes",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/282"
+                },
+                {
+                    "id": 283,
+                    "name": "Remboursements",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/283"
+                },
+                {
+                    "id": 289,
+                    "name": "Economies",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/289"
+                },
+                {
+                    "id": 314,
+                    "name": "Loyers reçus",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/314"
+                },
+                {
+                    "id": 327,
+                    "name": "Allocations et pensions",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/327"
+                },
+                {
+                    "id": 441893,
+                    "name": "Subventions",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/441893"
+                },
+                {
+                    "id": 441894,
+                    "name": "Emprunt",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/441894"
+                }
+            ],
+            "resource_type": "category",
+            "resource_uri": "/v2/categories/2"
+        },
+        {
+            "id": 161,
+            "name": "Logement",
+            "categories": [
+                {
+                    "id": 216,
+                    "name": "Loyer",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/216"
+                },
+                {
+                    "id": 217,
+                    "name": "Electricité",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/217"
+                },
+                {
+                    "id": 218,
+                    "name": "Gaz",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/218"
+                },
+                {
+                    "id": 220,
+                    "name": "Logement - Autres",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/220"
+                },
+                {
+                    "id": 221,
+                    "name": "Décoration",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/221"
+                },
+                {
+                    "id": 222,
+                    "name": "Entretien",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/222"
+                },
+                {
+                    "id": 246,
+                    "name": "Assurance habitation",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/246"
+                },
+                {
+                    "id": 293,
+                    "name": "Eau",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/293"
+                },
+                {
+                    "id": 323,
+                    "name": "Extérieur et jardin",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/323"
+                },
+                {
+                    "id": 328,
+                    "name": "Charges diverses",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/328"
+                }
+            ],
+            "resource_type": "category",
+            "resource_uri": "/v2/categories/161"
+        },
+        {
+            "id": 168,
+            "name": "Alimentation & Restau.",
+            "categories": [
+                {
+                    "id": 83,
+                    "name": "Restaurants",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/83"
+                },
+                {
+                    "id": 188,
+                    "name": "Alimentation - Autres",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/188"
+                },
+                {
+                    "id": 260,
+                    "name": "Fast foods",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/260"
+                },
+                {
+                    "id": 273,
+                    "name": "Supermarché / Epicerie",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/273"
+                },
+                {
+                    "id": 313,
+                    "name": "Café",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/313"
+                }
+            ],
+            "resource_type": "category",
+            "resource_uri": "/v2/categories/168"
+        },
+        {
+            "id": 303,
+            "name": "Retraits, Chq. et Vir.",
+            "categories": [
+                {
+                    "id": 78,
+                    "name": "Virements",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/78"
+                },
+                {
+                    "id": 85,
+                    "name": "Retraits",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/85"
+                },
+                {
+                    "id": 88,
+                    "name": "Chèques",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/88"
+                },
+                {
+                    "id": 326,
+                    "name": "Virements internes",
+                    "resource_type": "category",
+                    "resource_uri": "/v2/categories/326"
+                }
+            ],
+            "resource_type": "category",
+            "resource_uri": "/v2/categories/303"
+        }
+    ],
+    "generated_at": "2025-08-06T12:57:04.186Z",
+    "pagination": {
+        "next_uri": null
+    }
+}
