@@ -5,7 +5,6 @@ BankinVenv\Scripts\activate
 python -m pip install -r .\requirements.txt
 
 add .env file and fill : 
-bearer = 'Bearer '
 client_id = ''
 client_secret = ''
 

@@ -3,6 +3,33 @@ import json
 from dotenv import load_dotenv
 import os
 
+def get_bearer(client_id, client_secret, Bankin_Device, email, password):
+    url = "https://sync.bankin.com/v2/authenticate"
+
+    custom_data = {
+        "email":email,
+        "password": password,
+        'token':''
+    }
+
+    custom_headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+        'bankin-version': '2019-08-22',
+        'client-id': client_id,
+        'client-secret': client_secret,
+        'accept-encoding': 'gzip, deflate, br, zstd',
+        'accept-language': 'fr',
+        'Bankin-Device':Bankin_Device,
+        'Content-Type': 'application/json',
+    }
+
+    response = requests.post(url, headers=custom_headers, json=custom_data)
+    
+    data = response.json()
+    bearer_token = data["access_token"]
+    print('Token refresh')
+
+    return bearer_token
 
 def requete_data(bearer, client_id, client_secret):
     url = 'https://sync.bankin.com/v2/transactions'
@@ -33,8 +60,8 @@ def requete_data(bearer, client_id, client_secret):
 
     all_data = []
 
-    if os.path.exists("data.json"):
-        with open("data.json", "r", encoding="utf-8") as f:
+    if os.path.exists(save_file):
+        with open(save_file, "r", encoding="utf-8") as f:
             try:
                 old_data = json.load(f)
                 all_data.extend(old_data["resources"])
@@ -51,40 +78,49 @@ def requete_data(bearer, client_id, client_secret):
 
         response = requests.get(url, headers=custom_headers, params=params)
         
-        if response.status_code == 200:
-            data = response.json()
-            transactions = data.get('resources', [])
-            all_data.extend(transactions)
-            print(f"Données récupérées de {since_str} à {until_str} : {len(transactions)} éléments")
-        else:
-            print(f"Erreur lors de la requête : {response.status_code} - {response.text}")
-            raise Exception(f"Erreur lors de la requête : {response.status_code} - {response.text}")
+        max_attempts = 2
+        for attempt in range(max_attempts):
+            response = requests.get(url, headers=custom_headers, params=params)
+            if response.status_code == 200:
+                data = response.json()
+                transactions = data.get('resources', [])
+                all_data.extend(transactions)
+                print(f"Données de {since_str} à {until_str} : {len(transactions)} éléments")
+            elif response.status_code == 401 and attempt == 0:
+                bearer = "Bearer " + get_bearer(client_id, client_secret, Bankin_Device, email, password)
+            else:
+                raise Exception(f"Erreur {response.status_code}: {response.text}")
 
-    with open("data.json", "w", encoding="utf-8") as json_file:
+    with open(save_file, "w", encoding="utf-8") as json_file:
         json.dump({"resources": all_data}, json_file, indent=4, ensure_ascii=False)
-        print('Toutes les données sauvegardées dans data.json')
+        print('Datas saved data.json')
 
     return all_data
 
 
 def get_datas(update_data=False):
     if update_data :
+        bearer = "Bearer " + get_bearer(client_id, client_secret, Bankin_Device, email, password)
         requete_data(bearer, client_id, client_secret)
-        with open('data.json', 'r', encoding='utf-8') as fichier:
+        with open(save_file, 'r', encoding='utf-8') as fichier:
             datas = json.load(fichier)
             return datas
     else :
-        with open('data.json', 'r', encoding='utf-8') as fichier:
+        with open(save_file, 'r', encoding='utf-8') as fichier:
             datas = json.load(fichier)
             return datas
 
 
 # SECRETS
 load_dotenv()
-bearer = os.environ["bearer"]
 client_id = os.environ["client_id"]
 client_secret = os.environ["client_secret"]
+Bankin_Device = os.environ["Bankin_Device"]
+email = os.environ["email"]
+password = os.environ["password"]
+save_file = 'datas/data.json'
 
 datas = get_datas(update_data=True)
+
 
 
