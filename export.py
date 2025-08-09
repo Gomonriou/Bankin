@@ -1,10 +1,11 @@
 import json
 import csv
+import calendar
 
-with open('id.json', 'r', encoding='utf-8') as f:
+with open('datas/id.json', 'r', encoding='utf-8') as f:
     id_file = json.load(f)
 
-with open('data.json', 'r', encoding='utf-8') as f:
+with open('datas/data.json', 'r', encoding='utf-8') as f:
     data_file = json.load(f)
 
 category_map = {}
@@ -15,8 +16,8 @@ for resource in id_file['resources']:
         category_map[category_id] = category_name
 
 
-with open('output.csv', 'w', newline='', encoding='utf-8-sig') as csvfile:
-    writer = csv.writer(csvfile)
+with open('datas/output.csv', 'w', newline='', encoding='utf-8-sig') as csvfile:
+    writer = csv.writer(csvfile, dialect='excel')
     writer.writerow(['description', 'montant', 'category.id', 'category_name', 'date', 'année', 'mois'])
 
     for item in data_file.get('resources', []):
@@ -27,4 +28,8 @@ with open('output.csv', 'w', newline='', encoding='utf-8-sig') as csvfile:
         date = item.get('date', '')
         annee = date.split('-')[0] if date else ''
         mois = date.split('-')[1] if date else ''
+        mois = calendar.month_abbr[int(mois)]
         writer.writerow([description, montant, category_id, category_name, date, annee, mois])
+
+
+print('You can open in excel datas/output.csv')

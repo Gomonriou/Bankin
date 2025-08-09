@@ -1,3 +1,5 @@
+BankinVenv
 .env
-data.json
-output.csv
+datas/data.json
+datas/output.csv
+__pycache__

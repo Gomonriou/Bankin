@@ -1,5 +1,7 @@
 requests
 jmespath
 python-dotenv
-matplotlib
-seaborn
+
+pandas
+plotly
+streamlit-aggrid

@@ -79,35 +79,6 @@ def get_datas(update_data=False):
             return datas
 
 
-def sums_categories(datas, categories, include=True):
-    total = 0
-    for item in datas.get('resources', []):
-        if item.get('category'):
-            cat_id = item['category'].get('id')
-            if (include and cat_id in categories) or (not include and cat_id not in categories):
-                print(f"Montant ajouté : {item['amount']} (category.id={cat_id})")
-                total += item['amount']
-    return total
-
-
-def sums_marchant(datas, marchants):
-    total = 0
-    count = 0
-    for item in datas.get('resources', []):
-        if (item.get('metadata')
-            and item['metadata'].get('merchant')
-            and item['metadata']['merchant'].get('code', '').lower() == marchants.lower()):
-            
-            total += item['amount']
-            count += 1
-            print(f"Achats comptabilisés : {count}")  
-            print(f"{count} > Achat le {item['date']} de {item['amount']} €")  
-    
-    print(f"Nombre total d'achats pour le marchand '{marchants}': {count}")
-    print(f"Somme totale des montants : {total}")
-    return total
-
-
 # SECRETS
 load_dotenv()
 bearer = os.environ["bearer"]
@@ -117,24 +88,3 @@ client_secret = os.environ["client_secret"]
 datas = get_datas(update_data=True)
 
 
-# entrees = {3, 80, 230, 231, 232, 233, 271, 279, 282, 283, 289, 314, 327, 441893, 441894}
-# fixe = {265, 277, 245, 242, 90, 235}
-# exclude = {89, 326}
-# restes = fixe.union(exclude).union(entrees)
-# print(restes)
-
-# sums_fixe = 0
-# sums_envie = 0
-# sums_restes = 0
-
-# sums_fixe = sums_categories(datas, fixe)
-# sums_envie = sums_categories(datas, exclude)
-# sums_restes = sums_categories(datas, restes, include=False)
-
-# print(f"""Total des dépenses pour : 
-#       besoin : {sums_fixe} €
-#       restes : {sums_restes} €
-#       """)
-
-# sums_marchant = sums_marchant(datas, "CARREFOUR")
-# print(f"Total des dépenses pour CARREFOUR : {sums_marchant} €")
