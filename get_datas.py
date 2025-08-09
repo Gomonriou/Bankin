@@ -54,21 +54,6 @@ def get_bearer(client_id, client_secret, Bankin_Device, email, password):
 def requete_data(bearer, client_id, client_secret, periods):
     url = 'https://sync.bankin.com/v2/transactions'
 
-    # periods = [
-    #     ('2024-09-01', '2024-09-30'),
-    #     ('2024-10-01', '2024-10-31'),
-    #     ('2024-11-01', '2024-11-30'),
-    #     ('2024-12-01', '2024-12-31'),
-    #     ('2025-01-01', '2025-01-31'),
-    #     ('2025-02-01', '2025-02-28'),
-    #     ('2025-03-01', '2025-03-31'),
-    #     ('2025-04-01', '2025-04-30'),
-    #     ('2025-05-01', '2025-05-31'),
-    #     ('2025-06-01', '2025-06-30'),
-    #     ('2025-07-01', '2025-07-31'),
-    #     ('2025-08-01', '2025-08-31'),
-    # ]
-
     custom_headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
         'authorization': bearer,
