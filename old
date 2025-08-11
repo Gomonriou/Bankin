@@ -6,6 +6,7 @@ import plotly.express as px
 from st_aggrid import AgGrid, GridOptionsBuilder
 
 st.set_page_config(layout="wide")
+
 def aggrid_interactive_table(df):
     gb = GridOptionsBuilder.from_dataframe(df)
     gb.configure_default_column(resizable=True, filter=True, sortable=True)
@@ -102,6 +103,7 @@ filtered_df = df_final[(df_final["year_month"] >= start) & (df_final["year_month
 
 
 ########################################################################################################### AFFICHAGE
+# GENERAL 
 ## Tabs
 st.title("Analyse de mes transactions")
 st.subheader(f"Données de {start} à {end}")
@@ -134,6 +136,7 @@ fig.update_layout(
 )
 st.plotly_chart(fig, use_container_width=True)
 
+# Detail
 ## Pie
 st.title("Analyse en detail")
 
