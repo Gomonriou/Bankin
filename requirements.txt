@@ -1,7 +1,8 @@
+# get_datas.py
 requests
-jmespath
 python-dotenv
-
-pandas
+python-dateutil
+# streamlit.py
+streamlit
 plotly
 streamlit-aggrid
