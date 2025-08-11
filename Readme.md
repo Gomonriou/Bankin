@@ -12,3 +12,11 @@ client_secret = ''
 first run datas = get_datas(update_data=True) puis false pour eviter de requete pour rien
 
 streamlit run .\streamlit.py
+
+
+remplir ces filtres avec ses besoins de trie :
+    depenses_fixes = ["Notes de frais", "Téléphonie mobile", "Mutuelle", "Sport", "Dépenses pro - Autres", "Coiffeur"]
+    a_ignorer = ["Remboursement emprunt", "Virements internes", "Autres rentrées"]
+    entrees = ["Salaires"]
+
+    
