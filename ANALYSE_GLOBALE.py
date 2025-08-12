@@ -73,7 +73,7 @@ if "date_range" not in st.session_state:
 
 st.sidebar.header("Filtres :")
 st.session_state.date_range = st.sidebar.select_slider(
-    "",
+    "Time range",
     options=all_months,
     value=st.session_state.date_range
 )

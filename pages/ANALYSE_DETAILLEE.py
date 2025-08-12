@@ -10,7 +10,7 @@ all_months = sorted(st.session_state.df_final["year_month"].unique())
 
 st.sidebar.header("Filtres :")
 st.session_state.date_range = st.sidebar.select_slider(
-    "",
+    "Time range",
     options=all_months,
     value=st.session_state.date_range
 )
