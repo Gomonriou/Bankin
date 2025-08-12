@@ -1,0 +1,37 @@
+2025-08-12 10:31:35,554 - INFO - Export terminé
+2025-08-12 10:31:38,497 - INFO - Export terminé
+2025-08-12 10:31:39,826 - INFO - Export terminé
+2025-08-12 10:31:40,025 - INFO - Export terminé
+2025-08-12 10:32:18,859 - INFO - Token refresh
+2025-08-12 10:32:19,253 - INFO - Données de 2024-09-01 à 2024-09-30 : 0 nouveaux éléments
+2025-08-12 10:32:19,676 - INFO - Données de 2024-10-01 à 2024-10-31 : 0 nouveaux éléments
+2025-08-12 10:32:20,065 - INFO - Données de 2024-11-01 à 2024-11-30 : 0 nouveaux éléments
+2025-08-12 10:32:20,405 - INFO - Données de 2024-12-01 à 2024-12-31 : 0 nouveaux éléments
+2025-08-12 10:32:20,780 - INFO - Données de 2025-01-01 à 2025-01-31 : 0 nouveaux éléments
+2025-08-12 10:32:21,153 - INFO - Données de 2025-02-01 à 2025-02-28 : 0 nouveaux éléments
+2025-08-12 10:32:21,495 - INFO - Données de 2025-03-01 à 2025-03-31 : 0 nouveaux éléments
+2025-08-12 10:32:21,871 - INFO - Données de 2025-04-01 à 2025-04-30 : 0 nouveaux éléments
+2025-08-12 10:32:22,247 - INFO - Données de 2025-05-01 à 2025-05-31 : 0 nouveaux éléments
+2025-08-12 10:32:22,631 - INFO - Données de 2025-06-01 à 2025-06-30 : 0 nouveaux éléments
+2025-08-12 10:32:23,003 - INFO - Données de 2025-07-01 à 2025-07-31 : 0 nouveaux éléments
+2025-08-12 10:32:23,367 - INFO - Données de 2025-08-01 à 2025-08-31 : 0 nouveaux éléments
+2025-08-12 10:32:23,428 - INFO - Datas saved data.json
+2025-08-12 10:32:23,430 - INFO - Erreur lors de la mise à jour : cannot access local variable 'e' where it is not associated with a value Show /LOGS
+2025-08-12 10:35:44,121 - INFO - Export terminé
+2025-08-12 10:35:45,424 - INFO - Export terminé
+2025-08-12 10:35:45,951 - INFO - Export terminé
+2025-08-12 10:39:31,644 - INFO - Token refresh
+2025-08-12 10:39:32,025 - INFO - Données de 2024-09-01 à 2024-09-30 : 0 nouveaux éléments
+2025-08-12 10:39:32,387 - INFO - Données de 2024-10-01 à 2024-10-31 : 0 nouveaux éléments
+2025-08-12 10:39:32,806 - INFO - Données de 2024-11-01 à 2024-11-30 : 0 nouveaux éléments
+2025-08-12 10:39:33,205 - INFO - Données de 2024-12-01 à 2024-12-31 : 0 nouveaux éléments
+2025-08-12 10:39:33,565 - INFO - Données de 2025-01-01 à 2025-01-31 : 0 nouveaux éléments
+2025-08-12 10:39:33,921 - INFO - Données de 2025-02-01 à 2025-02-28 : 0 nouveaux éléments
+2025-08-12 10:39:34,298 - INFO - Données de 2025-03-01 à 2025-03-31 : 0 nouveaux éléments
+2025-08-12 10:39:34,670 - INFO - Données de 2025-04-01 à 2025-04-30 : 0 nouveaux éléments
+2025-08-12 10:39:35,047 - INFO - Données de 2025-05-01 à 2025-05-31 : 0 nouveaux éléments
+2025-08-12 10:39:35,472 - INFO - Données de 2025-06-01 à 2025-06-30 : 0 nouveaux éléments
+2025-08-12 10:39:35,850 - INFO - Données de 2025-07-01 à 2025-07-31 : 0 nouveaux éléments
+2025-08-12 10:39:36,305 - INFO - Données de 2025-08-01 à 2025-08-31 : 0 nouveaux éléments
+2025-08-12 10:39:36,365 - INFO - Datas saved data.json
+2025-08-12 10:39:36,367 - INFO - Données mises à jour avec succès !

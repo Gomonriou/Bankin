@@ -2,10 +2,12 @@ import streamlit as st
 from scripts.utils import *
 import plotly.graph_objects as go
 import plotly.express as px
+from scripts.logging_config import logger
 
 init_page()
 
 ## FILTERS
+# --- Filtre time range ---
 all_months = sorted(st.session_state.df_final["year_month"].unique())
 
 st.sidebar.header("Filtres :")
@@ -65,7 +67,7 @@ with st.sidebar.expander("Catégories"):
 df_autre = df_autre[df_autre["Categorie"].isin(selected_categories)]
 
 ################################################################# DISPLAY
-st.title("Page détail")
+st.title("ANALAYSE DETAILLEE")
 
 ### Tables
 aggrid_interactive_table(df_autre)

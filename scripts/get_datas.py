@@ -4,6 +4,8 @@ from dotenv import load_dotenv
 import os
 from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
+from scripts.logging_config import logger
+
 
 def get_periods(months):
     periods = []
@@ -48,6 +50,7 @@ def get_bearer(client_id, client_secret, Bankin_Device, email, password):
     data = response.json()
     bearer_token = data["access_token"]
     print('Token refresh')
+    logger.info('Token refresh')
 
     return bearer_token
 
@@ -94,7 +97,7 @@ def requete_data(bearer, client_id, client_secret, periods):
                 new_transactions = [t for t in transactions if t['id'] not in existing_ids]
                 all_data.extend(new_transactions)
                 existing_ids.update(t['id'] for t in new_transactions)
-                print(f"Données de {since_str} à {until_str} : {len(new_transactions)} nouveaux éléments")
+                logger.info(f"Données de {since_str} à {until_str} : {len(new_transactions)} nouveaux éléments")
                 break
             elif response.status_code == 401 and attempt == 0:
                 bearer = "Bearer " + get_bearer(client_id, client_secret, Bankin_Device, email, password)
@@ -103,37 +106,9 @@ def requete_data(bearer, client_id, client_secret, periods):
 
     with open('datas/data.json', "w", encoding="utf-8") as json_file:
         json.dump({"resources": all_data}, json_file, indent=4, ensure_ascii=False)
-        print('Datas saved data.json')
+        logger.info('Datas saved data.json')
     
     return all_data
 
 
-# def get_datas(update_data=False, periods=12):
-#     if update_data :
-#         bearer = "Bearer " + get_bearer(client_id, client_secret, Bankin_Device, email, password)
-#         requete_data(bearer, client_id, client_secret, periods)
-#         with open('datas/data.json', 'r', encoding='utf-8') as fichier:
-#             datas = json.load(fichier)
-#             return datas
-#     else :
-#         with open('datas/data.json', 'r', encoding='utf-8') as fichier:
-#             datas = json.load(fichier)
-#             return datas
 
-
-
-
-
-# # SECRETS
-# load_dotenv()
-# client_id = os.environ["client_id"]
-# client_secret = os.environ["client_secret"]
-# Bankin_Device = os.environ["Bankin_Device"]
-# email = os.environ["email"]
-# password = os.environ["password"]
-# # Confs
-# 'datas/data.json' = ''datas/data.json''
-# conf_periods = os.environ["periods"]
-
-# periods = get_periods(int(conf_periods))
-# datas = get_datas(update_data=True)

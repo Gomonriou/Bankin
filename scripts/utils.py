@@ -4,6 +4,7 @@ import subprocess
 from scripts.get_datas import *
 from dotenv import load_dotenv
 import os
+from scripts.logging_config import logger
 
 load_dotenv()
 client_id = os.environ["client_id"]
@@ -36,8 +37,10 @@ def export_button():
         result = subprocess.run(["python", "scripts/export.py"], capture_output=True, text=True)
         if result.returncode == 0:
             st.sidebar.success("Export terminé avec succès ! Vous pouvez ouvrir le fichier datas/output.csv dans Excel.")
+            logger.info("Export terminé")
         else:
             st.sidebar.error(f"Erreur lors de l’export :\n{result.stderr}")
+            logger.info(f"Erreur lors de l’export :\n{result.stderr} Show /LOGS")
 
 
 def get_datas_button():
@@ -48,5 +51,7 @@ def get_datas_button():
                 periods = get_periods(int(conf_periods))
                 requete_data(bearer, client_id, client_secret, periods)
             st.sidebar.success("Données mises à jour avec succès !")
+            logger.info(f"Données mises à jour avec succès !")
         except Exception as e:
             st.sidebar.error(f"Erreur lors de la mise à jour : {e}")
+            logger.info(f"Erreur lors de la mise à jour : {e} Show /LOGS")

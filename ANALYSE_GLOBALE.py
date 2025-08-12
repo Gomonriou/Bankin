@@ -4,6 +4,8 @@ import json
 from scripts.utils import *
 import plotly.graph_objects as go
 import plotly.express as px
+from scripts.logging_config import logger
+
 
 init_page()
 
@@ -97,7 +99,7 @@ filtered_df = filtered_df[filtered_df["Account ID"] == account_choisi]
 
 ################################################################# DISPLAY
 ### Tables
-st.title("Page générale")
+st.title("ANALYSE GLOBALE")
 aggrid_interactive_table(filtered_df)
 
 total_montant = filtered_df["Montant"].abs().sum()
