@@ -1,6 +1,8 @@
 BankinVenv
 .env
 datas/data.json
+datas/accounts.json
 datas/output.csv
 __pycache__
 ./logs/*
+logs/app.log

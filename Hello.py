@@ -7,6 +7,15 @@ st.session_state.depenses_fixes = os.environ["depenses_fixes"]
 st.session_state.entrees = os.environ["entrees"]
 st.session_state.a_ignorer = os.environ["a_ignorer"]
 st.session_state.default_account = int(os.environ["default_account"])
+st.session_state.bearer = ''
+
+st.session_state.client_id = os.environ["client_id"]
+st.session_state.client_secret = os.environ["client_secret"]
+st.session_state.Bankin_Device = os.environ["Bankin_Device"]
+st.session_state.email = os.environ["email"]
+st.session_state.password = os.environ["password"]
+st.session_state.conf_file = 'datas/data.json'
+st.session_state.conf_periods = os.environ["periods"]
 
 st.set_page_config(
     page_title="Hello",
