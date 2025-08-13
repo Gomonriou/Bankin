@@ -13,6 +13,8 @@ first run datas = get_datas(update_data=True) puis false pour eviter de requete 
 
 streamlit run .\streamlit.py
 
+TO DO :
+[] FIXER LE PB PERIODS FILTERS
 
 remplir ces filtres avec ses besoins de trie :
     depenses_fixes = ["Notes de frais", "Téléphonie mobile", "Mutuelle", "Sport", "Dépenses pro - Autres", "Coiffeur"]

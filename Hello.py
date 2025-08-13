@@ -17,6 +17,8 @@ st.session_state.password = os.environ["password"]
 st.session_state.conf_file = 'datas/data.json'
 st.session_state.conf_periods = os.environ["periods"]
 
+init_page()
+
 st.set_page_config(
     page_title="Hello",
     page_icon="👋",
