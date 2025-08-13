@@ -3,3 +3,4 @@ BankinVenv
 datas/data.json
 datas/output.csv
 __pycache__
+./logs/*
