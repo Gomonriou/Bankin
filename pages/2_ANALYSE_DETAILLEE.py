@@ -28,7 +28,7 @@ all_accounts = filtered_df["Account ID"].dropna().unique().tolist()
 account_choisi = st.sidebar.selectbox(
     "Compte",
     options=all_accounts,
-    index=0 if all_accounts else None
+    index=all_accounts.index(st.session_state.default_account) if all_accounts else None
 )
 
 df_autre = filtered_df[filtered_df["Account ID"] == account_choisi]

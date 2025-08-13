@@ -100,16 +100,16 @@ def load_data():
         "account_id": "Account ID"
     }, inplace=True)
 
-    depenses_fixes = ["Notes de frais", "Téléphonie mobile", "Mutuelle", "Sport", "Dépenses pro - Autres", "Coiffeur"]
-    a_ignorer = ["Remboursement emprunt", "Virements internes", "Autres rentrées"]
-    entrees = ["Salaires"]
+    # depenses_fixes = ["Notes de frais", "Téléphonie mobile", "Mutuelle", "Sport", "Dépenses pro - Autres", "Coiffeur"]
+    # a_ignorer = ["Remboursement emprunt", "Virements internes", "Autres rentrées"]
+    # entrees = ["Salaires"]
 
     def mapper_categorie_perso(nom_categorie):
-        if nom_categorie in depenses_fixes:
+        if nom_categorie in st.session_state.depenses_fixes:
             return "Dépense fixe"
-        elif nom_categorie in a_ignorer:
+        elif nom_categorie in st.session_state.a_ignorer:
             return "Ignore"
-        elif nom_categorie in entrees:
+        elif nom_categorie in st.session_state.entrees:
             return "Entrées"
         else:
             return "Restes"
